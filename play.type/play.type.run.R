@@ -4,7 +4,8 @@ training <- read.csv("play.type.train.csv")
 testing <- read.csv("play.type.test.csv")
 training <- training[,-1]
 testing <- testing[,-1]
-# training <- training[1:500,] # i used to make sure that everything could run. I commented out once it all worked. Left just in case. 
+# training <- training[1:500,] # i used to make sure that everything could run. I commented out once it all worked. Left just in case.
+# # There were some errors that i think were due to not using all factor levels in model. I will need more computing power. 
 
 ########## Decision Tree
 # Train model
