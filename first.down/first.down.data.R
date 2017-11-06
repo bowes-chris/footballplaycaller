@@ -24,7 +24,7 @@ nfl.pt <- nfl.pt[x,]
 
 # Trainign and Testing sets
 set.seed(123)
-intrain <- createDataPartition(y = nfl.pt$PlayType2, p = 0.7, list = FALSE) 
+intrain <- createDataPartition(y = nfl.pt$FirstDown, p = 0.7, list = FALSE) 
 assign("training", nfl.pt[intrain,] , envir = .GlobalEnv)
 assign("testing",  nfl.pt[-intrain,] , envir = .GlobalEnv)
 
