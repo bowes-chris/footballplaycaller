@@ -3,7 +3,7 @@ nfl <- read.csv("nfl.final.csv")
 nfl <- nfl[,-1]
 
 # Only columns that will be used in play type classification models
-nfl.pt <- nfl[,c(4:8,10:15, 18:19 ,26,37)]
+nfl.pt <- nfl[,c(4:8,10:15, 18:20,26,37)]
 
 # Only plays that are run/pass
 nfl.pt <- nfl.pt[nfl.pt$PlayType2 %in% c("Pass Deep left", "Pass Deep middle", "Pass Deep right","Pass Short left","Pass Short middle", "Pass Short right"), ]
